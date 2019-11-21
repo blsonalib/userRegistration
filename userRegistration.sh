@@ -3,7 +3,8 @@ shopt -s extglob
 echo "********USER-REGISTRATION********"
 read userData
 firstName="^[A-Z]+[a-z]{3,}$"
-if [[ $userData =~ $firstName ]];
+lastName="^[A-Z]+[a-z]{3,}$"
+if [[ $userData =~ $lastName ]];
 then 
     echo Valid;
 else
