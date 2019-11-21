@@ -9,10 +9,11 @@ mobileFormate="^[0-9]{2,3}[: :][0-9]{10}$"
 password1="^[0-9a-zA-Z]{8,}$"
 password2="^(([0-9a-zA-Z].*)?{8,})+([A-Z].*))?$"
 password3="^((([a-zA-Z].*)?{8,})+([0-9].*))?$"
+password4="^((([0-9a-zA-Z].*)?{8,})+([@#$%&*+-=].*))?$"
 while [ true ]
 do
 read userData
-if [[ $userData =~ $password3 ]];
+if [[ $userData =~ $password4 ]];
 then 
     echo Valid;
 else
